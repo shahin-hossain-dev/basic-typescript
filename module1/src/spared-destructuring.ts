@@ -47,4 +47,34 @@
   };
 
   greetFriends("Shahin", "Ahsan", "Hasan", "Faysal", "Mohiuddin");
+
+  //------------------------------
+  //destructuring
+  //----------------------
+
+  //Object Destructuring
+
+  const userInfo = {
+    id: 123,
+    name: {
+      firstName: "Muhammad",
+      // middleName: "Shahin",
+      lastName: "Hossain",
+    },
+    address: "Dhaka, Bangladesh",
+    contactNo: "01676446077",
+  };
+
+  const {
+    contactNo,
+    //name: { middleName }, //typeScript give an error, cause middleName property doesn't exist in userInfo
+    name: { firstName }, //access nested destructuring
+    name: { lastName: lstName }, // lastName কে aliace
+  } = userInfo;
+
+  //Array Destructuring
+
+  const bestFriends = ["Faysal", "Mohiuddin", "Ahsan", "Sujan"];
+
+  const [, , bestFriend] = bestFriends; //first 2টা নামকে skip করা হয়েছে।
 }
