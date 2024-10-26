@@ -74,7 +74,14 @@
 
   //Array Destructuring
 
-  const bestFriends = ["Faysal", "Mohiuddin", "Ahsan", "Sujan"];
+  const bestFriends = [
+    "Faysal",
+    "Mohiuddin",
+    "Ahsan",
+    "Sujan",
+    "Sojal",
+    "Imran",
+  ];
 
-  const [, , bestFriend] = bestFriends; //first 2টা নামকে skip করা হয়েছে।
+  const [, , bestFriend, ...rest] = bestFriends; //first 2টা নামকে skip করা হয়েছে।
 }
