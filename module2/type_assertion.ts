@@ -34,6 +34,7 @@
 
   try {
   } catch (error) {
+    // error message এর type আমরা fixed করে দিলাম, এটা string type এর হবে।
     console.log((error as ErrorMessage).message);
   }
 
