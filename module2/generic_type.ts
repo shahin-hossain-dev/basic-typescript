@@ -40,11 +40,17 @@
       age: 24,
     },
   ];
-  type userTypes = {
+  // --> type alias
+  // type UserTypes = {
+  //   name: string;
+  //   age: number;
+  // };
+  //--> interface type
+  interface UserType {
     name: string;
     age: number;
-  };
-  const users1: GenericType<userTypes> = [
+  }
+  const users1: GenericType<UserType> = [
     {
       name: "shahin",
       age: 25,
