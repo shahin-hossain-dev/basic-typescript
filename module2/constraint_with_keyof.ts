@@ -32,7 +32,7 @@
   const name = getPropertyValue(user, "name");
   const age = getPropertyValue(user, "age");
 
-  console.log(name, age);
+  //   console.log(name, age);
 
   //<----------------------------
 }
