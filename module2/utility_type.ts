@@ -41,5 +41,37 @@
 
   //   person1.name = "abdullah"; //give an error
 
+  //Record type-------------------->
+
+  // type Student = {
+  //   name: string;
+  //   subject: string;
+  // };
+
+  // const student1: Student = {
+  //   name: "Shahin",
+  //   subject: "Science",
+  // };
+
+  //যদি ডায়নামিক ভাবে অবজেক্ট এর মধ্যে property এর টাইপ define করতে চাই তাহলে Record use করতে হবে।
+
+  type Student = Record<string, string>; // এখানে প্রথম string হলো obj property type, পরেরটা হলো value type. property type always string type হয়।
+
+  const student2: Student = {
+    name: "Shahin",
+    // age: 25, // not allow this object takes only string type
+    subject: "Science",
+  };
+
+  //যদি যেকোনো ভ্যালু Record type নিবে তাহলে unknown type দিতে হবে।
+
+  const student3: Record<string, unknown> = {
+    name: "Shahin",
+    age: 25,
+    subject: "Science",
+  };
+
+  const EmptyObj: Record<string, unknown> = {};
+
   //<--------------------------
 }
