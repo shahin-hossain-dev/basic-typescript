@@ -12,3 +12,15 @@
 - ts কে js এর বিভিন্ন version এ convert করার জন্য config> `"target": "es2016",` target এর মধ্যে বিভিন্ন version কে value হিসাবে দিলে সেই varsion এর js file পাওয়া যাবে।
 
 - ts file কে কনসলে সরাসরি চালাতে হলে [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) package install করতে হবে। এবং ts-node-dev --respawn --transpile-only pathname.ts দিয়ে command দিতে হবে।
+
+<br>
+<hr>
+
+# OOP Concept
+
+### Building Blocks of OOP
+
+- Inheritence
+- Polymorphism
+- Abstraction
+- Encapsulation
