@@ -49,9 +49,9 @@
 
   // Static Property & Static Method------------------->
   // method static hole Class Dhore method call dite hobe.
-  const counter1 = Counter.increment(); //same location
-  const counter2 = Counter.increment(); //same location
-  const counter3 = Counter.increment(); //same location
+  const counter1 = Counter.increment(); //set in same location
+  const counter2 = Counter.increment(); //set in same location
+  const counter3 = Counter.increment(); //set in same location
   console.log(counter1);
   console.log(counter2);
   console.log(counter3);
