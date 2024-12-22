@@ -9,7 +9,7 @@
     public readonly id: number; // এই property কে শুধু read করা যাবে, এডিট করা যাবে না।
     public name: string;
     // private _balance: number; // এই property কে শুধু এই class এর মধ্যে modify/access করা যাবে। class er বাইরে থেকে যাবে না। child class thekeo access pabe na.
-    // private property te _(under squre ) use kora convention
+    // private property te _(under squire ) use kora convention
     protected _balance: number; // protected property gulo class er moddhe access pabe & child class thekeo access pabe
 
     constructor(id: number, name: string, balance: number) {
